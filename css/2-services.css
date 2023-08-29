@@ -189,7 +189,16 @@
         margin: 20px auto;
     }
 
-    .services-card__title {
+    /*.services-card__title {
         width: 200px;
     }
+
+    .services-card__title {
+        width: 100%;
+        color: #252525;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 1px;
+    }*/
 }
