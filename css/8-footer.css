@@ -1,0 +1,97 @@
+footer {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-box {
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    background-color: #2E2E2E;
+}
+
+.footer-box__address {
+    padding: 20px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+}
+
+.footer-box__phone {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all .4s ease-in;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer-box__phone:hover {
+    color: #FFFFFF;
+}
+
+.footer-box__phone:hover::after {
+    width: 100%;
+    right: 0;
+}
+
+.footer-box__phone::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    right: 0;
+    position: absolute;
+    background: #FFFFFF;
+    transition: width .5s ease 0s, right .5s ease 0s;
+    width: 0;
+}
+
+.footer-box__networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.footer-box__network {
+    text-decoration: none;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.footer-box__network svg path {
+    transition: fill .5s ease-in;
+}
+
+.footer-box__network:hover svg path {
+    fill: #FFFFFF;
+    /*stroke: #FFFFFF;*/
+}
+
+.copyright {
+    max-width: 1350px;
+    width: 100%;
+    text-align: center;
+    background-color: #252525;
+    margin: 0 auto;
+}
+
+.copyright__text {
+    margin: 0;
+    padding: 30px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+}

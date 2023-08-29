@@ -1,0 +1,91 @@
+.works {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0 70px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "menu gk"
+        "ds gk"
+        "ds rp1"
+        "rp2 rp1"
+        "rp2 rp1";
+    max-width: 1250px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+.works-menu {
+    grid-area: menu;
+    margin: 0 20px;
+}
+
+.gk {
+    text-align: right;
+    grid-area: gk;
+}
+
+.ds {
+    grid-area: ds;
+}
+
+.rp1 {
+    text-align: right;
+    grid-area: rp1;
+}
+
+.rp2 {
+    grid-area: rp2;
+}
+
+.works-product {
+    position: relative;
+    max-width: 550px;
+    width: 100%;
+}
+
+.works-product__img {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px rgba(7, 7, 7, 0.2);
+}
+
+.works-product__name {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #252525;
+    cursor: pointer;
+}
+
+.works-product__name-link {
+    text-decoration: none;
+    color: #252525;
+    cursor: pointer;
+    width: 320px;
+}
+
+.works-product__text {
+    font-size: 12px;
+    line-height: 22px;
+    color: #C2C2C2;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 1000px) {
+    .works {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 20px auto;
+        padding-bottom: 20px;
+    }
+
+    .works-product {
+        max-width: 900px;
+        width: 90%;
+    }
+}

@@ -1,0 +1,243 @@
+.header {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    flex-wrap: wrap;
+    top: 47px;
+    z-index: 5;
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(#252525, transparent);
+}
+
+.header-menu__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .4s ease-in;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.header-menu__link:hover {
+    color: #6B8E23;
+}
+
+.header-menu__link:hover::after {
+    width: 100%;
+    right: 0;
+}
+
+.header-menu__link::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(to left, #addcaf, #4CAF50 100%);
+    transition: width .5s ease 0s, right .5s ease 0s;
+    width: 0;
+}
+
+.header-menu__link-mob-stroke, .header-menu__link-mob-fill {
+    display: none;
+    text-align: center;
+}
+
+.header-menu__link-mob__text {
+    text-decoration: none;
+    color: #999;
+    font-size: 8px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.mySwiper {
+    max-width: 1350px;
+    width: 100%;
+    max-height: 904px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    max-width: 1350px;
+    min-height: 350px;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    margin: 0 auto;
+    filter: brightness(70%);
+}
+
+.swiper__info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    margin-top: -150px;
+    width: 520px;
+    margin-left: -260px;
+}
+
+.swiper__title {
+    font-weight: 700;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px #777777;
+}
+
+.swiper__text {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px #777777;
+}
+
+.swiper__btn {
+    background-color: transparent;
+    border: none;
+    width: 280px;
+    margin: 10px auto;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px #777777;
+}
+
+.swiper__btn:hover {
+    color: #addcaf;
+}
+
+.swiper__btn:hover::after {
+    width: 240px;
+    right: 50%;
+    margin-right: -120px;
+
+}
+
+.swiper__btn::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    right: 0;
+    position: absolute;
+    background: #4CAF50;
+    transition: width .5s ease 0s, right .5s ease 0s;
+    width: 0;
+}
+
+@media (max-width: 800px) {
+
+    .mySwiper {
+        margin: 0 auto;
+    }
+
+    .header-menu {
+        top: 0;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .swiper-wrapper {
+        top: -47px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .swiper__info {
+        width: 400px;
+        margin-left: -200px;
+    }
+
+    .swiper__title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 520px) {
+    .header-menu {
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        margin: 0 auto;
+        background: linear-gradient(transparent, #252525);
+        height: 47px;
+        z-index: 100;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+    }
+
+    .header-menu__link {
+        display: none;
+    }
+
+    .header-menu__link-mob-stroke, .header-menu__link-mob-fill {
+        display: inline-block;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-menu__link-mob-stroke, .header-menu__link-mob-fill {
+        display: inline-block;
+        padding: 0 20px;
+    }
+
+    .header-menu__link-mob-stroke:hover svg path {
+        stroke: #fff;
+    }
+
+    .header-menu__link-mob-fill:hover svg path {
+        fill: #fff;
+    }
+
+    .swiper__info {
+        width: 320px;
+        margin-left: -160px;
+    }
+
+    .swiper__title {
+        font-size: 28px;
+    }
+}

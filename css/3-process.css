@@ -1,0 +1,131 @@
+.process {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    background-color: #f3ffe9;
+}
+
+.process-info {
+    max-width: 1200px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.process-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1350px;
+    width: 100%;
+    margin: 40px auto;
+    padding-bottom: 20px;
+}
+
+.process-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    margin-bottom: 30px;
+    max-width: 374px;
+    min-height: 200px;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0 0 10px 5px rgba(7, 7, 7, 0.2);
+}
+
+.process-card__title {
+    width: 260px;
+    margin-left: 20px;
+    color: #252525;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.process-card__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin: 20px;
+    padding: 6px;
+    box-shadow: 0 0px 10px 2px rgba(9, 9, 9, 0.2);
+}
+
+.services-line {
+    width: 45px;
+    height: 2px;
+    margin: 0 20px;
+    padding: 0;
+    border: none;
+    background-color: #252525;
+    text-align: left;
+}
+
+.process-card__text {
+    width: 330px;
+    margin: 20px;
+    color: #777777;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 1242px) {
+    .process-cards {
+        justify-content: space-between;
+        width: 80%;
+        margin: 40px auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .services-info__title {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .services-info__line {
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .process-cards {
+        justify-content: space-between;
+        width: 90%;
+        margin: 40px auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 832px) {
+    .process-cards {
+        justify-content: center;
+        width: 90%;
+        margin: 20px auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 458px) {
+    .process-cards {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 412px) {
+    .process-card {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .process-card__title {
+        width: 200px;
+    }
+}

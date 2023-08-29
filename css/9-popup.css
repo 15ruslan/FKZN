@@ -1,0 +1,169 @@
+.popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    margin-top: -290px;
+    margin-left: -290px;
+    width: 100%;
+    max-width: 580px;
+    min-height: 580px;
+    background-color: #FFF;
+    border: #6B8E23;
+    box-shadow: 0 0 26px 10px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s, visibility .5s, transform .8s;
+}
+
+.popup-img {
+    width: 250px;
+    height: 520px;
+    background-color: #6B8E23;
+    object-fit: cover;
+}
+
+.popup-box {
+    width: 250px;
+    margin-left: 25px;
+    height: 520px;
+    
+}
+
+.popup.open {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.popup-close svg {
+    transition: transform .5s;
+}
+
+.popup-close svg:hover {
+    transform: rotate(360deg);
+}
+
+.popup__title-answer {
+    margin-bottom: 40px;
+}
+
+.popup__label {
+    width: 250px;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.popup__input {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 16px;
+}
+
+.popup__btn {
+    width: 250px;
+    height: 40px;
+    border: #6B8E23;
+    background-color: #97FF59;
+    margin-top: 40px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.flare {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 45px;
+    transform: skewX(-45deg); 
+    animation: flareAnimation;
+    left: -150%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 3s infinite linear; /* Время и тип анимации можно менять*/
+}
+
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+@media (max-width: 590px) {
+    .popup {
+        top: 10px;
+        left: 50%;
+        z-index: 10;
+        margin-top: 0;
+        margin-left: -200px;
+        width: 100%;
+        height: 90%;
+        max-width: 400px;    
+    }
+
+    .popup-img {
+        width: 400px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 410px) {
+    .popup {
+        top: 10px;
+        left: 50%;
+        z-index: 10;
+        margin-left: -170px;
+        width: 100%;
+        height: 98%;
+        max-width: 340px;    
+    }
+
+    .popup-img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .popup__title-quest {
+        margin: 0 auto;
+    } 
+
+    .popup__title-answer {
+        margin: 10px auto;
+    }
+
+    .popup__label {
+        width: 250px;
+        font-size: 12px;
+        padding-bottom: 8px;
+    }
+    
+    .popup__input {
+        width: 250px;
+        height: 24px;
+        margin-bottom: 1px;
+    }
+
+    .popup__btn {  
+        margin-top: 14px;
+        height: 40px;
+    }
+}
