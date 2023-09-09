@@ -10,7 +10,7 @@
         "ds rp1"
         "rp2 rp1"
         "rp2 rp1";
-    max-width: 1250px;
+    max-width: 1920px;
     width: 96%;
     margin: 0 auto;
 }
@@ -40,7 +40,7 @@
 
 .works-product {
     position: relative;
-    max-width: 550px;
+    max-width: 960px;
     width: 100%;
 }
 
@@ -50,12 +50,14 @@
     filter: brightness(60%);
     cursor: pointer;
     box-shadow: 0 0 10px 5px rgba(7, 7, 7, 0.2);
+    border-radius: 70px;
 }
 
 .works-product__name {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 28px;
+    line-height: 30px;
     letter-spacing: 1px;
+    font-weight: 500;
     color: #252525;
     cursor: pointer;
 }
@@ -64,12 +66,16 @@
     text-decoration: none;
     color: #252525;
     cursor: pointer;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
     width: 320px;
 }
 
 .works-product__text {
-    font-size: 12px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 25px;
     color: #C2C2C2;
     padding-bottom: 30px;
 }

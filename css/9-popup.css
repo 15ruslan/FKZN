@@ -19,6 +19,7 @@
     opacity: 0;
     transform: scale(0);
     transition: opacity .5s, visibility .5s, transform .8s;
+    border-radius: 30px;
 }
 
 .popup-img {
@@ -72,6 +73,7 @@
     width: 250px;
     height: 30px;
     margin-bottom: 16px;
+    border-radius: 16px;
 }
 
 .popup__btn {
@@ -85,6 +87,7 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    border-radius: 16px;
 }
 
 .flare {

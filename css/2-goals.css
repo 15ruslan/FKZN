@@ -1,0 +1,141 @@
+.goals-box {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.goals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 70px auto;
+}
+
+.goals-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.goal-1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 16px;
+    width: 33%;
+    max-width: 608px;
+    min-height: 400px;
+    border-radius: 70px;
+    box-shadow: 0 0 10px 5px rgba(7, 7, 7, 0.2);
+}
+
+.goal-2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 16px;
+    width: 50%;
+    max-width: 928px;
+    height: 400px;
+    border-radius: 70px;
+    box-shadow: 0 0 10px 5px rgba(7, 7, 7, 0.2);
+}
+
+.goal-3 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 16px;
+    width: 60%;
+    max-width: 1120px;
+    height: 400px;
+    border-radius: 70px;
+    box-shadow: 0 0 10px 5px rgba(7, 7, 7, 0.2);
+}
+
+.goal__img-1 {
+    margin: 16px;
+    width: 33%;
+    max-width: 608px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 70px;
+    box-shadow: 0 0 10px 5px rgba(7, 7, 7, 0.2);
+}
+
+.goal__img-2 {
+    margin: 16px;
+    width: 50%;
+    max-width: 928px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 70px;
+    box-shadow: 0 0 10px 5px rgba(7, 7, 7, 0.2);
+}
+
+.goal__img-3 {
+    margin: 16px;
+    width: 40%;
+    max-width: 736px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 70px;
+    box-shadow: 0 0 10px 5px rgba(7, 7, 7, 0.2);
+}
+
+.goal__number {
+    width: 100%;
+    margin: 0 50px;  
+    padding-bottom: 100px;
+    color: #57bf32;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: 1px;
+}
+
+.goal__info {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.goal__title {
+    width: 100%;
+    margin: 0 50px;  
+    color: #252525;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.goal__text {
+    width: 100%;
+    margin: 50px;
+    color: #777777;
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 810px) {
+    .design__info {
+        flex-wrap: wrap;
+    }
+
+    .design__info-left {
+        width: 96%;
+    }
+
+    .design__info-right {
+        width: 96%;
+    }
+}

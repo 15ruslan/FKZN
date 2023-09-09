@@ -1,8 +1,8 @@
 .process {
     width: 100%;
-    max-width: 1350px;
-    margin: 0 auto;
-    background-color: #f3ffe9;
+    max-width: 1920px;
+    margin: 40px auto;
+    /*background-color: #f3ffe9;*/
 }
 
 .process-info {
@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1350px;
+    max-width: 1920px;
     width: 100%;
     margin: 40px auto;
     padding-bottom: 20px;
@@ -27,40 +27,42 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 16px;
     margin-bottom: 30px;
-    max-width: 374px;
-    min-height: 200px;
+    max-width: 608px;
+    min-height: 400px;
     width: 100%;
     background-color: #FFF;
     box-shadow: 0 0 10px 5px rgba(7, 7, 7, 0.2);
+    border-radius: 70px;
 }
 
 .process-card__heading {
     margin: 0;
+    width: 100%;
 }
 
 .process-card__title {
-    width: 260px;
-    margin-left: 20px;
+    width: 100%;
+    margin-left: 50px;
     color: #252525;
-    font-weight: 300;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 28px;
     line-height: 28px;
     letter-spacing: 1px;
 }
 
 .process-card__img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: contain;
-    margin: 20px;
+    margin: 50px;
     padding: 6px;
     box-shadow: 0 0px 10px 2px rgba(9, 9, 9, 0.2);
 }
 
-.services-line {
+/*.services-line {
     width: 45px;
     height: 2px;
     margin: 0 20px;
@@ -68,14 +70,16 @@
     border: none;
     background-color: #252525;
     text-align: left;
-}
+}*/
 
 .process-card__text {
-    width: 330px;
-    margin: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 50px;
     color: #777777;
-    font-size: 12px;
+    font-size: 22px;
     line-height: 25px;
+    font-weight: bold;
     letter-spacing: 1px;
 }
 

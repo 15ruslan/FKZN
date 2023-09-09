@@ -1,11 +1,12 @@
 .services {
     width: 100%;
-    max-width: 1350px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
 .services-info {
-    max-width: 1200px;
+    max-width: 1400px;
+    
     text-align: left;
     margin: 0 auto;
 }
@@ -14,26 +15,16 @@
     margin: 0;
     padding-top: 60px;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 58px;
     letter-spacing: 3px;
-}
-
-.services-info__line {
-    width: 45px;
-    height: 2px;
-    margin: 20px 0;
-    padding: 0;
-    border: none;
-    background-color: #252525;
-    text-align: left;
 }
 
 .services-cards {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1350px;
+    /*flex-wrap: wrap;*/
+    max-width: 1920px;
     width: 100%;
     margin: 40px auto;
     padding-bottom: 20px;
@@ -46,24 +37,26 @@
     flex-wrap: wrap;
     text-align: center;
     margin: 20px;
-    max-width: 280px;
+    max-width: 448px;
     min-height: 450px;
     width: 100%;
-    background-color: #f3ffe9;
+    /*background-color: #f3ffe9;*/
     box-shadow: 0 0 10px 5px rgba(7, 7, 7, 0.2);
+    border-radius: 70px;
 }
 
 .services-card__title-box {
     width: 100%;
-    margin: 0 auto;
+    margin: 50px auto;
     text-align: center;
 }
 
 .services-card__title {
     width: 100%;
+    margin-bottom: 20px;  
     color: #252525;
-    font-weight: 300;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 28px;
     line-height: 28px;
     letter-spacing: 1px;
 }
@@ -76,13 +69,18 @@
     border: none;
     background-color: #252525;
     text-align: center;
+    transition: width .5s;
+}
+
+.services-card__title-box:hover > .services-line-1 {
+    width: 200px;
 }
 
 .services-card__text {
-    width: 330px;
-    margin: 20px;
+    width: 100%;
+    margin: 40px;
     color: #777777;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 25px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -93,7 +91,7 @@
     min-height: 200px;
     margin: 20px;
     color: #777777;
-    font-size: 16px;
+    font-size: 26px;
     line-height: 25px;
     letter-spacing: 1px;
 }
@@ -102,11 +100,14 @@
     display: inline-block;
     text-decoration: none;
     color: #252525;
-    font-size: 14px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     position: relative;
     transition: all .4s ease-in;
-    margin-left: 10px;
+    margin-bottom: 30px;
     padding: 10px;
     cursor: pointer;
 }
@@ -136,6 +137,7 @@
 @media (max-width: 1242px) {
     .services-cards {
         justify-content: center;
+        flex-wrap: wrap;
         width: 90%;
         margin: 40px auto;
         padding-bottom: 20px;

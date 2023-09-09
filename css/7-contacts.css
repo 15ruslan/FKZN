@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1350px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
 }
@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 675px;
+    max-width: 960px;
     width: 50%;
     height: 150px;
     padding: 75px 0;
@@ -41,7 +41,7 @@
 }
 
 .contacts__title {
-    max-width: 675px;
+    max-width: 960px;
     width: 100%;
     padding: 0;
     font-weight: 400;
@@ -52,7 +52,7 @@
 }
 
 .contacts__text {
-    max-width: 675px;
+    max-width: 960px;
     width: 100%;
     padding: 0;
     font-weight: 400;
