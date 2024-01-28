@@ -10,11 +10,13 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 1920px;
     margin: 70px auto;
 }
 
 .goals-1 {
     display: flex;
+    /*flex-wrap: wrap;*/
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -117,7 +119,7 @@
 }
 
 .goal__text {
-    width: 100%;
+    width: 90%;
     margin: 50px;
     color: #777777;
     font-size: 22px;
@@ -126,16 +128,117 @@
     letter-spacing: 1px;
 }
 
-@media (max-width: 810px) {
-    .design__info {
+@media (max-width: 1100px) {
+    .goals-1 {
         flex-wrap: wrap;
     }
 
-    .design__info-left {
-        width: 96%;
+    .goal-1 {
+        width: 50%;
+        max-width: 490px;
+    }  
+
+    .goal-2 {
+        width: 100%;
+        max-width: 1000px;
+    }
+    
+    .goal-3 {
+        width: 100%;
+        max-width: 1000px;
     }
 
-    .design__info-right {
-        width: 96%;
+    .goal__img-1 {
+        width: 100%;
+        max-width: 1000px;
+    }
+    
+    .goal__img-2 {
+        width: 100%;
+        max-width: 1000px;
+    }
+    
+    .goal__img-3 {
+        width: 100%;
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .goal-1 {
+        width: 50%;
+        max-width: 384px;
+    }  
+
+    .goal-2 {
+        width: 100%;
+        max-width: 800px;
+    }
+    
+    .goal-3 {
+        width: 100%;
+        max-width: 800px;
+    }
+    
+    .goal__img-1 {
+        width: 100%;
+        max-width: 800px;
+    }
+    
+    .goal__img-2 {
+        width: 100%;
+        max-width: 800px;
+    }
+    
+    .goal__img-3 {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .goal__text {
+        width: 90%;
+        margin: 40px;
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .goal__title {
+        margin: 0 40px;  
+    }
+
+    .goal__number {
+        margin: 0 40px;  
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 800px) {
+    .goal-1 {
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 500px) {
+    .goal-1 {
+        width: 100%;
+        max-width: 500px;
+    } 
+
+    .goal__text {
+        width: 94%;
+        margin: 30px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .goal__title {
+        margin: 0 30px; 
+        font-size: 22px;
+    }
+
+    .goal__number {
+        margin: 0 30px;  
+        padding-bottom: 30px;
     }
 }

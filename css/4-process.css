@@ -6,7 +6,8 @@
 }
 
 .process-info {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1400px;
     text-align: left;
     margin: 0 auto;
 }
@@ -14,7 +15,7 @@
 .process-cards {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 1920px;
     width: 100%;
@@ -44,6 +45,7 @@
 
 .process-card__title {
     width: 100%;
+    max-width: 500px;
     margin-left: 50px;
     color: #252525;
     font-weight: 500;
