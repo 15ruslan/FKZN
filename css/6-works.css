@@ -53,9 +53,14 @@
     border-radius: 70px;
 }
 
+.works-product__img:hover {
+    filter: brightness(90%);
+    box-shadow: 0 0 10px 8px rgba(87, 191, 50, 0.5);
+}
+
 .works-product__name {
-    font-size: 28px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 25px;
     letter-spacing: 1px;
     font-weight: 500;
     color: #252525;
@@ -66,10 +71,10 @@
     text-decoration: none;
     color: #252525;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 25px;
     letter-spacing: 1px;
-    font-weight: bold;
+    font-weight: 500;
     width: 320px;
 }
 
@@ -92,6 +97,27 @@
 
     .works-product {
         max-width: 900px;
-        width: 90%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .works {
+        width: 94%;
+    }
+
+    .works-product__img {
+        width: 100%;
+        border-radius: 40px;
+        margin: 0 auto;
+    }
+
+    .works-product__name, .works-product__name-link, .works-product__text {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .works-product__text {
+        font-size: 16px;
     }
 }

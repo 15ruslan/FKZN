@@ -89,7 +89,7 @@
     height: 400px;
     object-fit: cover;
     border-radius: 70px;
-    box-shadow: 0 0 10px 5px rgba(7, 7, 7, 0.2);
+    box-shadow: 0 0 10px 8px rgba(87, 191, 50, 0.2);
 }
 
 .goal__number {
@@ -109,7 +109,7 @@
 }
 
 .goal__title {
-    width: 100%;
+    width: 90%;
     margin: 0 50px;  
     color: #252525;
     font-weight: 500;
@@ -128,6 +128,16 @@
     letter-spacing: 1px;
 }
 
+@media (max-width: 1400px) {
+    .goal__number, .goal__title, .goal__text {
+        margin: 0 30px;
+    }
+    
+    .goal__text {
+        margin: 50px 30px;
+    }
+}
+
 @media (max-width: 1100px) {
     .goals-1 {
         flex-wrap: wrap;
@@ -138,27 +148,12 @@
         max-width: 490px;
     }  
 
-    .goal-2 {
+    .goal-2, .goal-3 {
         width: 100%;
         max-width: 1000px;
     }
     
-    .goal-3 {
-        width: 100%;
-        max-width: 1000px;
-    }
-
-    .goal__img-1 {
-        width: 100%;
-        max-width: 1000px;
-    }
-    
-    .goal__img-2 {
-        width: 100%;
-        max-width: 1000px;
-    }
-    
-    .goal__img-3 {
+    .goal__img-1, .goal__img-2,.goal__img-3 {
         width: 100%;
         max-width: 1000px;
     }
@@ -166,33 +161,19 @@
 
 @media (max-width: 1000px) {
     .goal-1 {
-        width: 50%;
+        width: 44%;
         max-width: 384px;
     }  
 
-    .goal-2 {
+    .goal-2, .goal-3 {
         width: 100%;
         max-width: 800px;
     }
-    
-    .goal-3 {
+
+    .goal__img-1, .goal__img-2, .goal__img-3{
         width: 100%;
         max-width: 800px;
-    }
-    
-    .goal__img-1 {
-        width: 100%;
-        max-width: 800px;
-    }
-    
-    .goal__img-2 {
-        width: 100%;
-        max-width: 800px;
-    }
-    
-    .goal__img-3 {
-        width: 100%;
-        max-width: 800px;
+        margin: 16px;
     }
 
     .goal__text {
@@ -203,6 +184,7 @@
     }
 
     .goal__title {
+        width: 90%;
         margin: 0 40px;  
     }
 
@@ -212,21 +194,21 @@
     }
 }
 
-@media (max-width: 800px) {
-    .goal-1 {
-        width: 100%;
-        max-width: 800px;
-    }
-}
-
-@media (max-width: 500px) {
-    .goal-1 {
-        width: 100%;
-        max-width: 500px;
+@media (max-width: 550px) {
+    .goal-1, .goal-2, .goal-3 {
+        width: 94%;
+        max-width: 520px;
+        margin: 16px 0;
+        border-radius: 40px;
     } 
 
-    .goal__text {
+    .goal__img-1, .goal__img-2, .goal__img-3{
         width: 94%;
+        border-radius: 40px;
+    }
+
+    .goal__text {
+        width: 90%;
         margin: 30px;
         font-size: 18px;
         line-height: 24px;

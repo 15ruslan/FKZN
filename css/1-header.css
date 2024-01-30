@@ -10,7 +10,7 @@
     justify-content: flex-end;
     position: relative;
     flex-wrap: wrap;
-    top: 47px;
+    top: 0;
     z-index: 9999;
     max-width: 1920px;
     width: 100%;
@@ -199,16 +199,33 @@
 }
 
 @media (max-width: 520px) {
+    .header {
+        width: 100%;
+        max-width: 520px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mySwiper {
+        width: 100%;
+        max-width: 520px;
+        margin: 0;
+        padding: 0;
+    }
+
     .header-menu {
+        width: 100%;
+        max-width: 520px;
         position: fixed;
         bottom: 0;
         top: auto;
         margin: 0 auto;
         background: linear-gradient(transparent, #252525);
         z-index: 100;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         height: 60px;
+        flex-wrap: nowrap;
     }
 
     .header-menu__link {
